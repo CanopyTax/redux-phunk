@@ -3,7 +3,7 @@
 A redux [middleware](http://redux.js.org/docs/advanced/Middleware.html) to encourage smarter reducers and more phunktional action creators.
 
 ## Motivation
-Reducers are the best place to put conditional logic and data transformations, but many redux middleware patterns encourage putting that stuff into action creators. By moving logic out of action creators and into reducers, the logic is more easily reusable and testable. Redux-phunk makes your action creators just smart enough to handle async actions like API calls, but keeps them dumb enough so that conditional logic and data transformations remain in reducers. As a result, action creators are more functional and more easily tested.
+Reducers are the best place to put conditional logic and data transformations, but many redux middleware patterns encourage putting that stuff into action creators. By moving logic out of action creators and into reducers, the logic is more reusable and testable. Redux-phunk makes your action creators just smart enough to handle async actions like API calls, but keeps them dumb enough so that conditional logic and data transformations remain in reducers. As a result, action creators are more functional and more easily tested.
 
 ## What does it do?
 Redux-phunk allows you to dispatch an array of actions that will be dispatched in sequence, instead of just one action. For asynchronous code such as ajax, a special type of object (called a `phunk`) is included in the array, which all subsequent actions in the sequence will wait for.
