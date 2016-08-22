@@ -112,7 +112,7 @@ function executeCatchAll(obj, err) {
 		// observable was returned, we turn it into a promise
 		promise = asyncResult.first().toPromise();
 	} else {
-		promise = Promise.reject(new Error(`catchAll did not return a promise or an observable`));
+		promise = Promise.resolve(asyncResult);
 	}
 
 	return promise;
