@@ -1,4 +1,7 @@
 # redux-phunk
+[![npm version](https://img.shields.io/npm/v/redux-phunk.svg?style=flat-square)](https://www.npmjs.org/package/single-spa)
+[![Build Status](https://img.shields.io/travis/CanopyTax/redux-phunk.svg?style=flat-square)](https://travis-ci.org/CanopyTax/single-spa)
+
 A redux [middleware](http://redux.js.org/docs/advanced/Middleware.html) to encourage smarter reducers and more phunktional action creators.
 
 ## Motivation
