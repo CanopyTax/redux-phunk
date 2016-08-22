@@ -84,7 +84,7 @@ A "phunk" is just an object with `name` and `phunk` properties. The `phunk` prop
         } else {
           resolve()
         }
-      }
+      })
     }
   }
 }
