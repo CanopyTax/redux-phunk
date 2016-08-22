@@ -1,5 +1,4 @@
 # redux-phunk
-=============
 A redux [middleware](http://redux.js.org/docs/advanced/Middleware.html) to encourage smarter reducers and more phunktional action creators.
 
 ## Motivation
