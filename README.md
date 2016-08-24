@@ -57,7 +57,9 @@ store.dispatch(myAction());
 ## Phunks?? That's not even a word!
 "Phunks" are objects which complement actions. They are a way of waiting for asynchronous code (such as ajax, setTimeout, etc) before dispatching actions.
 
-To use phunks, simply dispatch an array of objects where at least one of the objects has a `name` and `phunk` property.  The `name` is just a string, and the `phunk` property is a function that returns an asynchronous value, such as a Promise or a (single-valued) Observable. Examples:
+To use phunks, dispatch an array of objects where at least one of the objects has a `name` and `phunk` property.  The `name` is just a string, and `phunk` is a function that returns an asynchronous value, such as a Promise or a (single-valued) Observable.
+
+Examples:
 
 ```js
 // es2016
